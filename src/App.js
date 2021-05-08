@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import styled from 'styled-components'
 
@@ -49,6 +48,7 @@ function App() {
       let newList = [...list];
       newList.push(item);
       setList(newList);
+      setTask('');
     }
   }
 
@@ -79,7 +79,7 @@ function App() {
             </thead>
             <tbody>
               {list.map((value, index)=>(
-                <tr>
+                <tr key={index}>
                   { value.done ?
                     <td style={{color:'green'}}>{value.title}</td> :
                     <td style={{color:'red'}}>{value.title}</td>
