@@ -1,3 +1,7 @@
+# App: Task List
+
+* Repositório para o app task list como exercício do curso de React da B7Web
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
